@@ -19,13 +19,6 @@ Aplikasi desktop Windows sederhana untuk merapikan file ke dalam folder berdasar
 
 
 
-## Demo Aplikasi
-
-Tonton video demo aplikasi yang dilampirkan pada **[GitHub Issue #1](https://github.com/Bagaas-ind/desktop-file-sorter/issues/1)**.
-
-<p align="center">
-  <a href="https://github.com/Bagaas-ind/desktop-file-sorter/issues/1"><strong>▶ TONTON VIDEO DEMO · BUKA ISSUE #1</strong></a>
-</p>
 
 ## Tentang Proyek
 
