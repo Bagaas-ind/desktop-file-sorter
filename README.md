@@ -19,13 +19,6 @@ A simple Windows desktop app that organizes files into folders by extension.
 
 
 
-## Live Demo
-
-Watch the application demo video attached to **[GitHub Issue #1](https://github.com/Bagaas-ind/desktop-file-sorter/issues/1)**.
-
-<p align="center">
-  <a href="https://github.com/Bagaas-ind/desktop-file-sorter/issues/1"><strong>▶ WATCH THE DEMO VIDEO · OPEN ISSUE #1</strong></a>
-</p>
 
 ## Overview
 
