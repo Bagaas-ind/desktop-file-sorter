@@ -20,6 +20,8 @@ A simple Windows desktop app that organizes files into folders by extension.
 
 
 
+**Demo video:** [Watch the application demo (GitHub Issue #1)](https://github.com/Bagaas-ind/desktop-file-sorter/issues/1)
+
 ## Overview
 
 Desktop File Sorter helps you clean up a folder without manually moving every file. It scans the folder you select, shows a preview of the planned destinations, and moves files into folders based on their extensions after you confirm.
