@@ -1,12 +1,40 @@
+<div align="center">
+
 # Desktop File Sorter
 
-**Rapikan folder. Temukan file lebih cepat.**
+### Less clutter. More clarity.
 
-Desktop File Sorter adalah aplikasi desktop Windows sederhana yang membantu merapikan file secara otomatis ke dalam folder berdasarkan ekstensi file. Cukup pindai folder, periksa preview, lalu biarkan Desktop File Sorter mengelompokkan file.
+Aplikasi desktop Windows ringan untuk merapikan file berdasarkan ekstensinya.
 
-> File PDF masuk ke folder `PDF/`, ZIP ke `ZIP/`, JPG ke `JPG/`, dan seterusnya.
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square&logo=windows&logoColor=white)
+![GUI](https://img.shields.io/badge/GUI-Tkinter-2C2C2C?style=flat-square)
+![Project](https://img.shields.io/badge/Project-Desktop%20Utility-lightgrey?style=flat-square)
 
 **🌐 Bahasa:** [English](README.md) | Bahasa Indonesia
+
+</div>
+
+---
+
+## Sekilas
+
+Tidak perlu lagi memindahkan file unduhan satu per satu. Desktop File Sorter memindai folder yang dipilih, menampilkan rencana lokasi file, lalu merapikannya setelah kamu memberikan konfirmasi.
+
+```text
+ SEBELUM                                 SESUDAH
+ Downloads/                              Downloads/
+ ├── tugas.pdf                           ├── PDF/
+ ├── foto.zip                 ───────▶   │   └── tugas.pdf
+ ├── liburan.jpg                         ├── ZIP/
+ └── installer.exe                       │   └── foto.zip
+                                         ├── JPG/
+                                         │   └── liburan.jpg
+                                         └── INSTALLER/
+                                             └── installer.exe
+```
+
+> **Alur sederhana:** Pilih folder → Pindai → Periksa → Rapikan.
 
 ---
 
@@ -23,11 +51,24 @@ Desktop File Sorter adalah aplikasi desktop Windows sederhana yang membantu mera
 
 ## 🖥️ Bagian Aplikasi
 
-- **Dashboard** — melihat folder yang dipilih dan ringkasan file.
-- **Organize Files** — memindai, melihat preview, dan mengonfirmasi proses perapian.
-- **History** — melihat riwayat operasi dan menggunakan Undo.
-- **Settings** — memilih folder yang akan dirapikan dan pengaturan konfirmasi.
-- **About** — melihat informasi aplikasi.
+| Bagian | Fungsi |
+| --- | --- |
+| **Dashboard** | Menampilkan folder pilihan dan ringkasan file. |
+| **Organize Files** | Memindai file, menampilkan preview, dan memulai perapian setelah konfirmasi. |
+| **History** | Melihat riwayat operasi dan menggunakan Undo. |
+| **Settings** | Memilih folder dan mengatur konfirmasi. |
+| **About** | Menampilkan informasi aplikasi. |
+
+## ⚙️ Teknologi
+
+<div>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Tkinter-2C2C2C?style=flat-square" alt="Tkinter" />
+  <img src="https://img.shields.io/badge/Windows-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Windows" />
+  <img src="https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white" alt="JSON" />
+</div>
+
+Dibangun menggunakan standard library Python, termasuk Tkinter, pathlib, shutil, dan JSON.
 
 ## 📦 Persiapan
 
@@ -143,14 +184,6 @@ Pengaturan aplikasi dan riwayat operasi disimpan secara lokal di:
 ```text
 %APPDATA%/DesktopFileSorter/
 ```
-
-## 🛠️ Teknologi
-
-- Python
-- Tkinter
-- pathlib
-- shutil
-- JSON
 
 ## 🤝 Kontribusi
 
