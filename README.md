@@ -1,12 +1,40 @@
+<div align="center">
+
 # Desktop File Sorter
 
-**Clean up your folders. Find your files faster.**
+### Less clutter. More clarity.
 
-A simple Windows desktop app that automatically organizes files into folders based on their file extensions. Scan a folder, review the preview, and let Desktop File Sorter handle the sorting.
+A lightweight Windows desktop app that organizes your files by extension.
 
-> PDF files go to `PDF/`, ZIP files to `ZIP/`, JPG files to `JPG/`, and so on.
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square&logo=windows&logoColor=white)
+![GUI](https://img.shields.io/badge/GUI-Tkinter-2C2C2C?style=flat-square)
+![Status](https://img.shields.io/badge/Project-Open%20Source%20Ready-lightgrey?style=flat-square)
 
 **🌐 Languages:** English | [Bahasa Indonesia](README.id.md)
+
+</div>
+
+---
+
+## At a Glance
+
+No more manually sorting every download. Desktop File Sorter scans the selected folder, shows where files will go, and organizes them into extension-based folders after confirmation.
+
+```text
+ BEFORE                                  AFTER
+ Downloads/                              Downloads/
+ ├── assignment.pdf                      ├── PDF/
+ ├── photos.zip              ───────▶    │   └── assignment.pdf
+ ├── vacation.jpg                        ├── ZIP/
+ └── installer.exe                       │   └── photos.zip
+                                         ├── JPG/
+                                         │   └── vacation.jpg
+                                         └── INSTALLER/
+                                             └── installer.exe
+```
+
+> **Simple workflow:** Select folder → Scan → Review → Organize.
 
 ---
 
@@ -23,11 +51,24 @@ A simple Windows desktop app that automatically organizes files into folders bas
 
 ## 🖥️ App Sections
 
-- **Dashboard** — see the selected folder and a summary of files.
-- **Organize Files** — scan, preview, and confirm file organization.
-- **History** — review previous operations and use Undo.
-- **Settings** — choose the folder to organize and confirmation preference.
-- **About** — view application information.
+| Section | What it does |
+| --- | --- |
+| **Dashboard** | Shows the selected folder and a summary of files. |
+| **Organize Files** | Scans files, displays a preview, and starts sorting after confirmation. |
+| **History** | Reviews previous operations and provides Undo. |
+| **Settings** | Lets you choose the folder and confirmation preference. |
+| **About** | Displays application information. |
+
+## ⚙️ Technology
+
+<div>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Tkinter-2C2C2C?style=flat-square" alt="Tkinter" />
+  <img src="https://img.shields.io/badge/Windows-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Windows" />
+  <img src="https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white" alt="JSON" />
+</div>
+
+Built with Python's standard library, including Tkinter, pathlib, shutil, and JSON.
 
 ## 📦 Getting Started
 
@@ -143,14 +184,6 @@ Application settings and operation history are stored locally under:
 ```text
 %APPDATA%/DesktopFileSorter/
 ```
-
-## 🛠️ Built With
-
-- Python
-- Tkinter
-- pathlib
-- shutil
-- JSON
 
 ## 🤝 Contributing
 
