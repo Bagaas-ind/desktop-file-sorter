@@ -20,6 +20,8 @@ Aplikasi desktop Windows sederhana untuk merapikan file ke dalam folder berdasar
 
 
 
+**Video demo:** [Lihat demo aplikasi di GitHub Issue #1](https://github.com/Bagaas-ind/desktop-file-sorter/issues/1)
+
 ## Tentang Proyek
 
 Desktop File Sorter membantu merapikan folder tanpa harus memindahkan setiap file secara manual. Aplikasi memindai folder yang kamu pilih, menampilkan preview lokasi tujuan, lalu memindahkan file ke folder berdasarkan ekstensinya setelah kamu memberikan konfirmasi.
