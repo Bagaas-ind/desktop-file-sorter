@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+<title id="title">Desktop File Sorter — From clutter to clarity</title>
+<desc id="desc">A visual demonstration of mixed files being organized into folders by extension.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101827"/><stop offset="1" stop-color="#182b43"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#35b6a0"/><stop offset="1" stop-color="#68d5bd"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity=".22"/></filter>
+</defs>
+<rect width="1200" height="660" rx="28" fill="url(#bg)"/>
+<text x="600" y="66" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="700" text-anchor="middle">LESS CLUTTER. MORE CLARITY.</text>
+<text x="600" y="105" fill="#a9bdd1" font-family="Segoe UI,Arial,sans-serif" font-size="18" text-anchor="middle">Automatically organize your Windows files by extension</text>
+<rect x="70" y="155" width="420" height="420" rx="22" fill="#f7f9fc" filter="url(#shadow)"/>
+<rect x="710" y="155" width="420" height="420" rx="22" fill="#f7f9fc" filter="url(#shadow)"/>
+<text x="110" y="205" fill="#25364a" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">BEFORE</text>
+<text x="750" y="205" fill="#25364a" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">AFTER</text>
+<text x="110" y="239" fill="#718096" font-family="Segoe UI,Arial,sans-serif" font-size="15">Downloads / mixed files</text>
+<text x="750" y="239" fill="#718096" font-family="Segoe UI,Arial,sans-serif" font-size="15">Downloads / sorted folders</text>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#25364a">
+  <g><rect x="105" y="270" width="350" height="58" rx="10" fill="#edf2f7"/><text x="130" y="306">📄  assignment.pdf</text></g>
+  <g><rect x="105" y="340" width="350" height="58" rx="10" fill="#edf2f7"/><text x="130" y="376">🗜  photos.zip</text></g>
+  <g><rect x="105" y="410" width="350" height="58" rx="10" fill="#edf2f7"/><text x="130" y="446">🖼  vacation.jpg</text></g>
+  <g><rect x="105" y="480" width="350" height="58" rx="10" fill="#edf2f7"/><text x="130" y="516">⚙  setup.exe</text></g>
+  <g><rect x="745" y="270" width="350" height="58" rx="10" fill="#e4f5f1"/><text x="770" y="306">📁  PDF</text><text x="1025" y="306" fill="#258b79" font-size="14">1 FILE</text></g>
+  <g><rect x="745" y="340" width="350" height="58" rx="10" fill="#eaf0ff"/><text x="770" y="376">📁  ZIP</text><text x="1025" y="376" fill="#5274c8" font-size="14">1 FILE</text></g>
+  <g><rect x="745" y="410" width="350" height="58" rx="10" fill="#fff3e4"/><text x="770" y="446">📁  JPG</text><text x="1025" y="446" fill="#c17a28" font-size="14">1 FILE</text></g>
+  <g><rect x="745" y="480" width="350" height="58" rx="10" fill="#f1eaff"/><text x="770" y="516">📁  INSTALLER</text><text x="1025" y="516" fill="#8055bb" font-size="14">1 FILE</text></g>
+</g>
+<path d="M525 365 H675 M650 340 L675 365 L650 390" fill="none" stroke="url(#accent)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="410" y="600" width="380" height="38" rx="19" fill="url(#accent)"/>
+<text x="600" y="625" fill="#0b2630" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">SCAN  →  REVIEW  →  ORGANIZE</text>
+</svg>
