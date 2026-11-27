@@ -17,6 +17,24 @@ A simple Windows desktop app that organizes files into folders by extension.
 
 ---
 
+
+
+## Live Demo
+
+See the application in action in the **demo video attached to GitHub Issue #1**.
+
+<p align="center">
+  <a href="https://github.com/Bagaas-ind/desktop-file-sorter/issues/1">
+    <img src="https://raw.githubusercontent.com/Bagaas-ind/desktop-file-sorter/main/assets/demo-overview.svg" alt="Desktop File Sorter — before and after file organization" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Bagaas-ind/desktop-file-sorter/issues/1"><strong>▶ WATCH THE DEMO VIDEO · OPEN ISSUE #1</strong></a>
+</p>
+
+The visual above explains the core workflow: mixed files are scanned, reviewed, and moved into folders based on their extensions. **Click the demo banner or the button to watch the recorded application demo.**
+
 ## Overview
 
 Desktop File Sorter helps you clean up a folder without manually moving every file. It scans the folder you select, shows a preview of the planned destinations, and moves files into folders based on their extensions after you confirm.
