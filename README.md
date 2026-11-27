@@ -2,31 +2,31 @@
 
 **Clean up your folders. Find your files faster.**
 
-Desktop File Sorter is a simple Windows desktop app that helps organize a cluttered folder by moving files into folders based on their file extensions. Instead of sorting files manually, scan a folder, review the list, and let Desktop File Sorter do the work.
+A simple Windows desktop app that automatically organizes files into folders based on their file extensions. Scan a folder, review the preview, and let Desktop File Sorter handle the sorting.
 
-> **Your files, organized by type.** PDF files go to `PDF/`, ZIP files to `ZIP/`, JPG files to `JPG/`, and so on.
+> PDF files go to `PDF/`, ZIP files to `ZIP/`, JPG files to `JPG/`, and so on.
+
+**🌐 Languages:** English | [Bahasa Indonesia](README.id.md)
 
 ---
 
 ## ✨ Features
 
-- **Choose a folder** — use your Downloads folder or select another folder.
-- **Scan before sorting** — see the files found and their planned destination.
-- **Sort by extension** — files are grouped into folders such as `PDF`, `ZIP`, `JPG`, `DOCX`, and `MP4`.
-- **Installer grouping** — supported installer packages are grouped in `INSTALLER/`.
-- **Avoid filename overwrites** — when a destination filename already exists, the app adds a number, such as `report (1).pdf`.
+- **Choose a folder** — organize Downloads or select another folder.
+- **Preview before sorting** — scan files and review their planned destinations.
+- **Automatic organization** — group files by extension, such as PDF, ZIP, JPG, DOCX, and MP4.
+- **Installer grouping** — supported installer packages are placed in `INSTALLER/`.
+- **Collision protection** — existing files are not overwritten; a number is added to duplicate names (for example, `report (1).pdf`).
 - **Activity history** — review previous sorting operations.
-- **Undo** — restore files to their original locations from the History page, when those locations are available.
-- **Local desktop app** — built with Python and Tkinter. No account or online service is required.
+- **Undo** — move files back to their original locations when those locations are available.
+- **Works locally** — no account or online service is required.
 
-## 🖥️ Preview
+## 🖥️ App Sections
 
-The app includes these sections:
-
-- **Dashboard** — view the selected folder and a summary of files and categories.
-- **Organize Files** — scan files, review the preview, and confirm sorting.
-- **History** — view previous operations and use Undo.
-- **Settings** — choose the target folder and confirmation preference.
+- **Dashboard** — see the selected folder and a summary of files.
+- **Organize Files** — scan, preview, and confirm file organization.
+- **History** — review previous operations and use Undo.
+- **Settings** — choose the folder to organize and confirmation preference.
 - **About** — view application information.
 
 ## 📦 Getting Started
@@ -37,18 +37,18 @@ The app includes these sections:
 - Python 3.12 recommended
 - Tkinter (included with standard Windows Python installations)
 
-### Run from source
+### Run from Source
 
 1. Download or clone this repository.
-2. Extract the project ZIP if you downloaded the source archive.
+2. Extract the ZIP archive if you downloaded the source.
 3. Open PowerShell or Command Prompt in the project folder (the folder containing `main.py`).
-4. Start the application:
+4. Run:
 
 ```powershell
 python main.py
 ```
 
-The project currently uses Python's standard library for its main application features. If you want to install the packages listed by the project, run:
+The main application uses Python's standard library. To install the packages listed in the project, run:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -56,13 +56,13 @@ python -m pip install -r requirements.txt
 
 ## 🚀 How to Use
 
-1. Open **Desktop File Sorter**.
-2. Go to **Settings** and check the target folder. By default, the app uses your user's Downloads folder.
-3. If you want to organize a different folder, click **Browse**, choose the folder, and save the settings.
+1. Launch **Desktop File Sorter**.
+2. Open **Settings** and check the target folder. By default, it uses your Downloads folder.
+3. To choose another folder, click **Browse**, select the folder, and save the settings.
 4. Open **Organize Files** and click **Scan Ulang** to scan the selected folder.
 5. Review the file list and destination folders.
 6. Click **RAPIKAN DOWNLOADS SEKARANG** and confirm the operation.
-7. Open **History** if you want to review the operation or try to restore files using **Undo**.
+7. Open **History** to review the operation or try to restore files with **Undo**.
 
 ### Example
 
@@ -90,20 +90,20 @@ Downloads/
     └── installer.exe
 ```
 
-The app scans files directly inside the selected folder; it does not recursively scan files inside its subfolders.
+**Note:** The app scans files directly inside the selected folder. It does not scan files inside subfolders recursively.
 
 ## ↩️ History and Undo
 
-Each successful sorting operation is recorded in the app's local history. From **History**, select an operation and choose **Undo** to move its files back to their original locations.
+Successful sorting operations are recorded in local history. From **History**, select an operation and choose **Undo** to move files back to their original locations.
 
-Undo cannot restore a file to its original path if another file already occupies that path. Check any messages shown by the app if some files cannot be restored.
+Undo cannot restore a file if another file already occupies its original path. Check the messages shown by the app if some files cannot be restored.
 
 ## 🛡️ Use Safely
 
-- **Try a test folder first.** Create a temporary folder with copies of a few files and test the workflow before organizing important folders.
+- Test the app first with a temporary folder containing copies of a few files.
 - Review the preview and confirmation dialog before proceeding.
 - The app moves files; it does not intentionally delete them.
-- Keep backups of important files. No file-management tool can replace a backup.
+- Keep backups of important files.
 - Do not close the app or shut down Windows while a sorting operation is in progress.
 
 ## 🧪 Run Tests
@@ -116,13 +116,13 @@ python -m unittest discover -s tests -v
 
 ## 🏗️ Build a Windows Executable (Optional)
 
-To package the application as a Windows executable, install PyInstaller:
+Install PyInstaller:
 
 ```powershell
 python -m pip install pyinstaller
 ```
 
-Then run:
+Build the executable:
 
 ```powershell
 pyinstaller --noconfirm --clean --onefile --windowed --name DesktopFileSorter main.py
@@ -134,7 +134,7 @@ The executable will be created at:
 dist/DesktopFileSorter.exe
 ```
 
-This build command is provided for developers. A prebuilt executable is not included unless it is published separately in the repository's **Releases**.
+This command is for developers. A prebuilt executable is not included unless it is published separately in the repository's **Releases**.
 
 ## 🗂️ App Data
 
@@ -152,68 +152,17 @@ Application settings and operation history are stored locally under:
 - shutil
 - JSON
 
-## 🌐 Bahasa Indonesia
-
-### Tentang Desktop File Sorter
-
-Desktop File Sorter adalah aplikasi desktop Windows sederhana untuk membantu merapikan folder yang berantakan. Aplikasi ini memindahkan file ke folder berdasarkan ekstensi file, sehingga kamu tidak perlu mengelompokkannya satu per satu secara manual.
-
-**PDF masuk ke folder PDF, ZIP ke folder ZIP, JPG ke folder JPG, dan seterusnya.**
-
-### Fitur
-
-- Memilih folder Downloads atau folder lain.
-- Memindai file dan menampilkan preview sebelum dipindahkan.
-- Mengelompokkan file berdasarkan ekstensi.
-- Menggabungkan file installer yang didukung ke folder `INSTALLER/`.
-- Menghindari nama file tertimpa dengan menambahkan nomor, misalnya `laporan (1).pdf`.
-- Menyimpan riwayat aktivitas.
-- Menyediakan fitur Undo untuk mengembalikan file ke lokasi semula jika lokasi tersebut masih tersedia.
-- Berjalan secara lokal di Windows menggunakan Python dan Tkinter.
-
-### Cara Menjalankan
-
-1. Download ZIP repository ini, lalu ekstrak.
-2. Buka folder proyek yang berisi file `main.py`.
-3. Buka PowerShell atau CMD di folder tersebut.
-4. Jalankan:
-
-```powershell
-python main.py
-```
-
-### Cara Menggunakan
-
-1. Buka Desktop File Sorter.
-2. Masuk ke **Settings** dan periksa folder tujuan. Secara default, aplikasi menggunakan folder Downloads pengguna.
-3. Untuk memilih folder lain, klik **Browse**, pilih folder, lalu simpan pengaturan.
-4. Buka **Organize Files**, kemudian klik **Scan Ulang**.
-5. Periksa daftar file dan folder tujuan pada preview.
-6. Klik **RAPIKAN DOWNLOADS SEKARANG**, lalu konfirmasi.
-7. Buka menu **History** jika ingin melihat riwayat atau menggunakan fitur **Undo**.
-
-### Catatan Keamanan
-
-- Coba terlebih dahulu menggunakan folder percobaan yang berisi salinan file.
-- Periksa preview sebelum menyetujui pemindahan.
-- Aplikasi memindahkan file, bukan sengaja menghapusnya.
-- Fitur Undo tidak dapat mengembalikan file jika lokasi asalnya sudah ditempati file lain.
-- Aplikasi hanya memindai file yang berada langsung di dalam folder pilihan, bukan isi subfolder secara rekursif.
-- Tetap simpan backup untuk file penting.
-
----
-
 ## 🤝 Contributing
 
-Suggestions, bug reports, and contributions are welcome. Feel free to open an **Issue** to report a problem or suggest an improvement, or submit a **Pull Request** with your changes.
+Suggestions, bug reports, and contributions are welcome. Open an **Issue** to report a problem or suggest an improvement, or submit a **Pull Request** with your changes.
 
 ## ⭐ Support the Project
 
-If Desktop File Sorter helps you keep your folders organized, consider giving this repository a **Star** ⭐. It helps other people discover the project and encourages continued development.
+If Desktop File Sorter helps keep your folders organized, consider giving this repository a **Star** ⭐. It helps others discover the project and supports continued development.
 
 ## 📄 License
 
-No license has been added yet. Until a license is provided, the repository's code is not granted an open-source reuse license. Please contact the repository owner before redistributing or reusing the code.
+No license has been added yet. Until a license is provided, the code is not granted an open-source reuse license. Please contact the repository owner before redistributing or reusing it.
 
 ---
 
