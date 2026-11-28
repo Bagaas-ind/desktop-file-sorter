@@ -1,86 +1,109 @@
 <div align="center">
 
-# Desktop File Sorter
+# 🗂️ Desktop File Sorter
 
 ### Less clutter. More clarity.
 
-A simple Windows desktop app that organizes files into folders by extension.
+A lightweight Windows desktop application that automatically organizes files into folders based on their file extensions.
 
-[![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
-[![GUI](https://img.shields.io/badge/GUI-Tkinter-444444?style=flat-square)](https://docs.python.org/3/library/tkinter.html)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Windows](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
+[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-444444?style=for-the-badge)](https://docs.python.org/3/library/tkinter.html)
+[![MIT License](https://img.shields.io/badge/License-MIT-2ea44f?style=for-the-badge)](LICENSE)
 
-**Languages:** English | [Bahasa Indonesia](README.id.md)
+**English** | [Bahasa Indonesia](README.id.md)
+
+[▶ Watch Demo](https://github.com/Bagaas-ind/desktop-file-sorter/issues/1) · [Report a Bug](https://github.com/Bagaas-ind/desktop-file-sorter/issues) · [View Repository](https://github.com/Bagaas-ind/desktop-file-sorter)
 
 </div>
 
 ---
 
+## What is Desktop File Sorter?
 
+Downloads and desktop folders can quickly become messy. Desktop File Sorter helps you organize them without manually moving files one by one.
 
+Select a folder, scan its files, review the preview, and confirm. The application then moves supported files into folders named after their extensions.
 
-**Demo video:** [Watch the application demo (GitHub Issue #1)](https://github.com/Bagaas-ind/desktop-file-sorter/issues/1)
-
-## Overview
-
-Desktop File Sorter helps you clean up a folder without manually moving every file. It scans the folder you select, shows a preview of the planned destinations, and moves files into folders based on their extensions after you confirm.
+### Before and after
 
 ```text
- BEFORE                                  AFTER
- Downloads/                              Downloads/
- ├── assignment.pdf                      ├── PDF/
- ├── photos.zip              ───────▶    │   └── assignment.pdf
- ├── vacation.jpg                        ├── ZIP/
- └── installer.exe                       │   └── photos.zip
-                                         ├── JPG/
-                                         │   └── vacation.jpg
-                                         └── INSTALLER/
-                                             └── installer.exe
+BEFORE                                  AFTER
+Downloads/                              Downloads/
+├── notes.pdf                           ├── PDF/
+├── holiday.jpg            ─────────▶   │   └── notes.pdf
+├── archive.zip                         ├── JPG/
+└── setup.exe                           │   └── holiday.jpg
+                                        ├── ZIP/
+                                        │   └── archive.zip
+                                        └── INSTALLER/
+                                            └── setup.exe
 ```
 
-**Workflow:** Choose a folder → Scan → Review → Organize.
+**Simple workflow:** Select folder → Scan → Review → Organize.
 
 ## Features
 
-- **Choose your folder** — use Downloads by default or select another folder.
-- **Preview before organizing** — review detected files and their destination folders.
-- **Automatic sorting** — group files by extension, such as PDF, ZIP, JPG, DOCX, MP4, and more.
-- **Installer grouping** — supported installer packages are placed in `INSTALLER/`.
-- **Filename collision protection** — existing files are not overwritten; a number is added to duplicate filenames, such as `report (1).pdf`.
-- **Operation history** — review previous sorting operations.
-- **Undo** — move files back to their original locations when those locations are available.
-- **Local operation** — file organization happens on your computer; no account or online service is required.
+| Feature | What it does |
+| --- | --- |
+| Folder selection | Organize the default Downloads folder or choose another folder. |
+| Scan and preview | See detected files and their destination folders before anything moves. |
+| Automatic sorting | Group files such as PDF, JPG, ZIP, DOCX, MP4, and other supported extensions. |
+| Installer grouping | Put supported installer files into an `INSTALLER` folder. |
+| Duplicate protection | Avoid overwriting existing files by adding a number to duplicate filenames. |
+| Operation history | Review previous file-organizing operations. |
+| Undo | Move files back to their original locations when those locations are available. |
+| Local processing | Organize files directly on your computer; no account or online service is required. |
 
-## Application Sections
+## How to use it
+
+1. Open the application.
+2. Go to **Settings** and check the folder you want to organize. The default is your Windows **Downloads** folder.
+3. To choose another location, click **Browse**, select a folder, and save.
+4. Open **Organize Files** and click **Scan Ulang**.
+5. Review the scan results and destination folders.
+6. Click **RAPIKAN DOWNLOADS SEKARANG** and confirm.
+7. Open **History** to review the operation or use **Undo** if needed.
+
+> **Important:** The app scans files directly inside the selected folder. It does not scan files inside subfolders recursively.
+
+## Application overview
 
 | Section | Purpose |
 | --- | --- |
-| **Dashboard** | Shows the selected folder and a summary of files and categories. |
-| **Organize Files** | Scans files, displays the preview, and starts sorting after confirmation. |
-| **History** | Reviews previous operations and provides Undo. |
-| **Settings** | Changes the target folder and confirmation preference. |
-| **About** | Displays application information. |
+| Dashboard | Shows the selected folder and a summary of files and categories. |
+| Organize Files | Scans files, previews destinations, and starts the organizing process. |
+| History | Displays previous operations and provides the Undo option. |
+| Settings | Lets you change the target folder and confirmation preference. |
+| About | Shows application information. |
 
-## Requirements
+## Installation
+
+### Requirements
 
 - Windows 10 or Windows 11.
 - Python 3.12 or newer recommended.
-- Tkinter, normally included with the standard Windows Python installer.
-- Git, if you want to clone the repository from the terminal.
+- Tkinter (normally included with the standard Windows Python installer).
+- Git is only required if you choose the clone method.
 
-> You do not need a GitHub account to clone this public repository. Git is only needed for the Git Clone method. You can also download the project as a ZIP file.
+### Option 1 — Download ZIP (easiest)
 
-## Installation and Launch
+1. Open the [repository page](https://github.com/Bagaas-ind/desktop-file-sorter).
+2. Click **Code → Download ZIP**.
+3. Extract the ZIP file.
+4. Open the extracted project folder (the folder containing `main.py`).
+5. Open PowerShell or Command Prompt in that folder.
+6. Run:
 
-Choose **one** of the following methods.
+```powershell
+python main.py
+```
 
-### Method 1 — Clone with Git
+### Option 2 — Clone with Git
 
-1. Install Python from [python.org](https://www.python.org/downloads/windows/). During installation, enable **Add Python to PATH**.
-2. Install Git from [git-scm.com](https://git-scm.com/download/win).
-3. Open PowerShell or Command Prompt.
-4. Run these commands:
+First, install [Python](https://www.python.org/downloads/windows/) and [Git](https://git-scm.com/download/win). During Python setup, enable **Add Python to PATH**.
+
+Then run:
 
 ```powershell
 git clone https://github.com/Bagaas-ind/desktop-file-sorter.git
@@ -88,137 +111,114 @@ cd desktop-file-sorter
 python main.py
 ```
 
-### Method 2 — Download ZIP
+### Do I need to install dependencies?
 
-1. Open the [Desktop File Sorter repository](https://github.com/Bagaas-ind/desktop-file-sorter).
-2. Click **Code → Download ZIP**.
-3. Extract the downloaded ZIP file.
-4. Open the extracted `desktop-file-sorter` folder.
-5. Open PowerShell or Command Prompt in that folder (the folder containing `main.py`).
-6. Run:
+Usually, no. The application uses Python's standard library, including Tkinter. You do not need to install extra packages just to run it.
 
-```powershell
-python main.py
-```
-
-### Do I need to install Python packages?
-
-The application itself uses Python's standard library, including Tkinter. You normally do **not** need to install additional packages just to launch it.
-
-The repository's `requirements.txt` lists optional development/build tools. Install them only if you need them:
+The `requirements.txt` file contains optional tools for testing and building. Install them only if you need them:
 
 ```powershell
 python -m pip install -r requirements.txt
 ```
 
-## First Run and Usage
+## Safety and important notes
 
-1. Launch the app using `python main.py`.
-2. Open **Settings** and check the target folder. The default is the current Windows user's Downloads folder.
-3. To organize another folder, click **Browse**, select the folder, and save the settings.
-4. Open **Organize Files** and click **Scan Ulang**.
-5. Review the files and their planned destination folders.
-6. Click **RAPIKAN DOWNLOADS SEKARANG** and confirm the operation.
-7. Open **History** to review the operation or use **Undo** when you want to restore files.
+Please read these points before organizing important files:
 
-### Important: it organizes the selected folder
+- **Preview first.** Always review the detected files and destination folders before confirming.
+- **Try a test folder.** Start with copies of a few files in a temporary folder.
+- **Files are moved, not intentionally deleted.** The application is designed to move files into category folders.
+- **Existing files are protected.** If a filename already exists at the destination, a numbered filename is used instead of overwriting it.
+- **Undo has limits.** A file cannot be restored to its original path if that path is already occupied.
+- **Keep backups.** Undo is not a replacement for a separate backup.
+- **Do not interrupt the process.** Avoid closing the app or shutting down Windows while files are being moved.
 
-The app scans files directly inside the selected folder. It does not scan the contents of subfolders recursively. It skips folders, symbolic links, hidden dotfiles, and certain app metadata files.
+### What the app skips
 
-### Where are settings and history stored?
+The application does not recursively scan subfolders. It also skips folders, symbolic links, hidden dotfiles, and certain application metadata files.
 
-On Windows, application settings and operation history are stored locally under:
+### Where are settings and history saved?
+
+Settings and operation history are stored locally on Windows at:
 
 ```text
 %APPDATA%\DesktopFileSorter\
 ```
 
-This data is stored separately for each Windows user account.
+The data is stored separately for each Windows user account.
 
-## Safety Notes and Limitations
+## Run tests
 
-File organization moves files from their current location into category folders. Please read these notes before using it on important folders:
-
-- **Test first.** Try the app with a temporary folder containing copies of a few files.
-- **Review before confirming.** Check the preview and confirmation dialog before moving files.
-- **No intentional deletion.** The organizer moves files; it is not designed to delete them.
-- **Name conflicts.** If a destination file already exists, the app adds a number to the new filename instead of overwriting the existing file.
-- **Undo limitation.** Undo cannot restore a file if its original path is already occupied by another file. Review any error messages if some files cannot be restored.
-- **Keep backups.** Maintain a separate backup of important data. Undo is not a replacement for a backup.
-- **Do not interrupt an operation.** Avoid closing the app or shutting down Windows while files are being moved.
-
-## Testing
-
-Run the test suite from the project folder:
+From the project folder, run:
 
 ```powershell
 python -m unittest discover -s tests -v
 ```
 
-## Build a Windows Executable (Optional)
+## Build a Windows executable (optional)
 
-If you want to package the application into an executable, install PyInstaller:
+You can package the app into an executable using [PyInstaller](https://pyinstaller.org/):
 
 ```powershell
 python -m pip install pyinstaller
-```
-
-Then run:
-
-```powershell
 pyinstaller --noconfirm --clean --onefile --windowed --name DesktopFileSorter main.py
 ```
 
-The executable will be created in:
+The output will be created at:
 
 ```text
 dist/DesktopFileSorter.exe
 ```
 
-This is a build instruction for users/developers who want to create their own executable. A prebuilt `.exe` is only available if the repository owner publishes one in **Releases**.
+This command lets you build the executable yourself. A ready-to-download `.exe` is available only if the project owner publishes one in **Releases**.
 
-## Troubleshooting
+## Technology stack
 
-| Problem | What to try |
+The project keeps its stack lightweight and uses Python's built-in tools wherever possible.
+
+<div align="left">
+
+[![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-444444?style=flat-square)](https://docs.python.org/3/library/tkinter.html)
+[![JSON](https://img.shields.io/badge/Data-JSON-000000?style=flat-square&logo=json&logoColor=white)](https://www.json.org/)
+[![PyInstaller](https://img.shields.io/badge/Build-PyInstaller-eeeeee?style=flat-square)](https://pyinstaller.org/)
+
+</div>
+
+| Technology | Role in this project |
 | --- | --- |
-| `python` is not recognized | Reinstall Python and enable **Add Python to PATH**, or try `py main.py`. |
-| `git` is not recognized | Install Git, reopen the terminal, and try again. |
-| `can't open file 'main.py'` | Change directory to the extracted/cloned project folder that contains `main.py`. |
-| The app does not open | Confirm that Python is installed correctly and that Tkinter is available. |
-| Some files are not moved | Check file permissions, whether the file is in use, and the error message shown by the app. |
-
-## Technology
-
-- [Python](https://www.python.org/)
-- [Tkinter](https://docs.python.org/3/library/tkinter.html)
-- pathlib and shutil
-- JSON for local settings and history
+| **Python** | Main programming language. |
+| **Tkinter** | Builds the desktop graphical interface (GUI). |
+| **pathlib** | Handles file and folder paths. |
+| **shutil** | Moves files between folders. |
+| **JSON** | Stores local settings and operation history. |
+| **unittest** | Runs the project's automated tests. |
+| **PyInstaller** | Optional tool for packaging the app as a Windows executable. |
 
 ## Contributing
 
-Contributions are welcome.
+Suggestions, bug reports, and contributions are welcome.
 
 1. Fork this repository.
-2. Create a branch for your change.
-3. Make and test your changes.
-4. Submit a Pull Request with a clear description.
+2. Create a branch for your changes.
+3. Make your changes and test them.
+4. Open a Pull Request with a clear explanation.
 
-For bugs or feature ideas, open a [GitHub Issue](https://github.com/Bagaas-ind/desktop-file-sorter/issues).
+For bugs or feature requests, please open a [GitHub Issue](https://github.com/Bagaas-ind/desktop-file-sorter/issues).
 
 ## License
 
-This project is licensed under the **MIT License**. You may use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the software, subject to the conditions in the [LICENSE](LICENSE) file.
-
-## Support
-
-If this project is useful to you, consider giving the repository a ⭐ Star. It helps others discover Desktop File Sorter.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
 
 **Desktop File Sorter**  
-*Less clutter. More clarity.*  
-Created by [Bagaas-ind](https://github.com/Bagaas-ind)
+*Less clutter. More clarity.*
+
+Made by [Bagaas-ind](https://github.com/Bagaas-ind)
+
+If this project helps you, consider giving it a ⭐ on GitHub.
 
 </div>
